@@ -19,4 +19,10 @@ To search for a simple string in any process and dump the memory segments contai
 
 #### The main work in this plugin was done in the _scan_process_memory function in which I managed to :
  ##### 1) Extract all the blocks that were alloacted for a specific data section, namely the heap, the stack and modules of each process 
- ![memory_chunks_allocated_for each data section](https://drive.google.com/file/d/1B0JWmDJZqZd1f_MyRewobvtInOTSrPF5/view?usp=sharing)
+ ![memory_chunks_allocated_for each data section](Screenshots/memory_chunks_allocated_for%20each%20data%20section.PNG)
+ ##### 2) Find the location of the searched string in the memory blocks of the sample and print out whether it is in kernel memory or process memory, its owner, its virtual address, whether it belongs to the heaps or the stacks or the modules of the process
+ 
+ ###### Examples of output when looking for the string 'system' inside a memory sample:
+ 
+ - ![String%20match](Screenshots/string%20match.PNG)
+ - ![string_match_modules](Screenshots/string_match_modules.PNG)
