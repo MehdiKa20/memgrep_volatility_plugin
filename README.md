@@ -26,3 +26,6 @@ To search for a simple string in any process and dump the memory segments contai
  
  - ![String%20match](Screenshots/string%20match.PNG)
  - ![string_match_modules](Screenshots/string_match_modules.PNG)
+### Further improvements
+
+ - I intend to make this plugin work on profiles other than the windows ones and add more information about the found match whether it was found inside the BSS of the process etc .. 
